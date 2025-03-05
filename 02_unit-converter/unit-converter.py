@@ -24,7 +24,7 @@ def convert_units(value, unit_from, unit_to):
 st.title("Unit Converter")
 
 # Input field to enter the value to convert
-value = st.number_input("Enter the value to convert")
+value = st.number_input("Enter the value to convert", min_value=1.0, step=1.0)
 
 # Dropdown to select the unit to convert from
 unit_from = st.selectbox("Convert From: ", ["meter", "kilometer", "gram", "kilogram"])
