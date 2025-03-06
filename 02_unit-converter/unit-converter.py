@@ -20,20 +20,20 @@ def convert_units(value, unit_from, unit_to):
     else:
         return "Conversion not available"  # Return a message if conversion is not available
 
-# Streamlit app title
-st.title("Unit Converter")
+# Streamlit app title with emoji
+st.title("🔄 Unit Converter")
 
-# Input field to enter the value to convert
-value = st.number_input("Enter the value to convert", min_value=1.0, step=1.0)
+# Input field to enter the value to convert with emoji
+value = st.number_input("🔢 Enter the value to convert", min_value=1.0, step=1.0)
 
-# Dropdown to select the unit to convert from
-unit_from = st.selectbox("Convert From: ", ["meter", "kilometer", "gram", "kilogram"])
+# Dropdown to select the unit to convert from with emoji
+unit_from = st.selectbox("📏 Convert From: ", ["meter", "kilometer", "gram", "kilogram"])
 
-# Dropdown to select the unit to convert to
-unit_to = st.selectbox("Convert To:", ["meter", "kilometer", "gram", "kilogram"])
+# Dropdown to select the unit to convert to with emoji
+unit_to = st.selectbox("📐 Convert To:", ["meter", "kilometer", "gram", "kilogram"])
 
-# Button to trigger the conversion
-if st.button("Convert"):
+# Button to trigger the conversion with emoji
+if st.button("🔄 Convert"):
     result = convert_units(value, unit_from, unit_to)  # Call the conversion function
-    # Display the result
-    st.markdown(f"{value} {unit_from} is equal to {result} {unit_to}")
+    # Display the result with emoji
+    st.markdown(f"✅ {value} {unit_from} is equal to {result} {unit_to}")
