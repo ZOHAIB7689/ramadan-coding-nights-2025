@@ -1,0 +1,7 @@
+[project]
+name = "AI Interview Coach"
+description = "Your AI-powered interview preparation assistant."
+
+[ui]
+favicon = "public/favicon.ico"  # Path to your custom favicon
+name = "AI Interview Coach"
